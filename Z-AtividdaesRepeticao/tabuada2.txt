@@ -1,0 +1,36 @@
+Algoritmo "Tabuadinha"
+
+Var
+
+numero: inteiro
+tabuada: vetor [1..500] de inteiro
+contador: inteiro
+comeco: inteiro
+fim: inteiro
+
+inicio
+
+escreval("Qual tabuada você quer ver?")
+leia(numero)
+
+escreval("De(inicio):")
+leia(comeco)
+
+escreval("Ate(fim): ")
+leia(fim)
+
+escreval("Tabuada do ", numero, " de ", comeco, " ate ", fim, ":")
+escreval("")
+
+   para contador <- comeco ate fim faca
+        tabuada[contador]<- contador * numero
+   fimpara
+
+   para contador <- comeco ate fim faca
+        escreval(contador, " x ", numero, " = ", tabuada[contador])
+   fimpara
+
+
+
+
+Fimalgoritmo

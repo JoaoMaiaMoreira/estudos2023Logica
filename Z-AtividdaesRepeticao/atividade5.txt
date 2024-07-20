@@ -1,0 +1,47 @@
+Algoritmo "exercicio5"
+
+
+Var
+
+   list:vetor [1..4] de inteiro
+   listpar: vetor [1..4] de inteiro
+   listimpar: vetor [1..4] de inteiro
+   numero, impar,par, contador1, numero2,contador2: inteiro
+
+Inicio
+
+
+
+   para numero <- 1 ate 4 faca
+      escreva ("digite um numero ")
+      leia(list[numero])
+   fimpara
+
+   para numero <- 1 ate 4 faca
+      se (list[numero] % 2 = 0) entao
+         contador1 <- contador1 + 1
+         listpar[contador1] <-  list[numero]
+      senao
+        contador2 <- contador2 + 1
+         listimpar[contador2] <- list[numero]
+
+      fimse
+    fimpara
+    
+    
+
+
+
+   para numero <- 1 ate contador1 faca
+      escreval(listpar[numero])
+   fimpara
+
+   escreval("impar:")
+
+   para numero <- 1 ate contador2 faca
+      escreval(listimpar[numero])
+   fimpara
+
+
+
+Fimalgoritmo

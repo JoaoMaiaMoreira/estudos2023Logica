@@ -1,0 +1,38 @@
+Algoritmo "GoodbyeVisualG"
+
+Var
+
+numero,comparacao, contador: inteiro
+list: vetor [1..5] de inteiro
+soma, media: real
+outracomparacao: inteiro
+
+Inicio
+
+   para numero <- 1 ate 5 faca
+      escreva("numero")
+      leia(list[numero])
+
+      se (comparacao = list[numero]) entao
+
+         //escreval ("Ja foi digitado")
+
+      senao
+
+         contador <- contador + 1
+
+         comparacao <- list[numero]
+
+         soma <- soma + comparacao
+
+      fimse
+
+   fimpara
+
+   media <- soma / contador
+
+   escreval ("A soma é: ", soma)
+
+   escreval ("A media é: ", media)
+
+Fimalgoritmo

@@ -1,0 +1,22 @@
+ para list[numero] <- 1 ate 10 faca
+        
+        list[numero]<-list[contadorList]
+        
+        fimpara
+
+
+        outra anotacao
+
+         se (nao numeroJaExistente)entao
+        soma  <- soma + numero
+        media <- soma / contador
+
+         para list[numero] <- 1 ate 10 faca
+
+        list[numero]<-list[contadorList]
+
+        fimpara
+
+    // adicionar numero no vetor list
+    fimse
+ 

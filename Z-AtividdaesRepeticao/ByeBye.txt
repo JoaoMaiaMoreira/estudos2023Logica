@@ -1,0 +1,44 @@
+Algoritmo "GoodbyeVisualG"
+
+Var
+
+numero,numero2,comparacao, contador: inteiro
+unicos: vetor [1..5] de inteiro
+soma, media: real
+existe: logico
+principal: vetor [1..5] de inteiro
+
+Inicio
+
+   para numero <- 1 ate 5 faca
+      escreva("numero")
+      leia(principal[numero])
+   fimpara
+
+   para numero <- 1 ate 5 faca
+      existe <- falso
+
+      para numero2 <- 1 ate 5 faca
+
+         se (principal[numero] = unicos[numero2]) entao
+            existe <- verdadeiro
+         fimse
+
+      fimpara
+
+      se (nao existe) entao
+
+         soma <- soma + principal[numero]
+         contador <- contador + 1
+         unicos[numero] <- principal[numero]
+      fimse
+
+   fimpara
+
+   media <- soma / contador
+
+   escreval ("A soma é: ", soma)
+
+   escreval ("A media é: ", media)
+
+Fimalgoritmo

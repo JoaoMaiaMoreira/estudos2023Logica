@@ -1,0 +1,65 @@
+Algoritmo "semnome"
+
+Var
+
+ soma,numero,contador, contadorList: inteiro
+ media: real
+ list: vetor [1..10] de inteiro
+
+ resposta: caracter
+ numeroJaExistente:logico
+
+Inicio
+
+soma <-0
+contador <- 0
+
+
+Repita
+
+ escreva("Digite um valor:")
+ Leia(numero)
+
+  numeroJaExistente <- falso
+
+       para contadorList <- 1 ate 10 faca
+
+          se (numero = list[contadorList])entao
+              numeroJaExistente <- verdadeiro
+          fimse
+   
+       fimpara
+
+ contador <- contador+1
+
+    se (nao numeroJaExistente)entao
+        soma  <- soma + numero
+        media <- soma / contador
+
+         para list[numero] <- 1 ate 10 faca
+
+        list[numero]<-list[contadorList]
+
+        fimpara
+
+    // adicionar numero no vetor list
+    fimse
+    
+    se (numeroJaExistente)entao
+        soma <- soma + numero
+        media <- soma / contador
+        
+    fimse
+ 
+ 
+ escreval(" Voce quer adicionar outro valor?[S/N]")
+ leia (resposta)
+ 
+
+ ate (resposta = "N")
+
+ escreval ("a soma é", soma)
+ 
+ escreval ("Media é:", media )
+
+Fimalgoritmo
